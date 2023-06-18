@@ -310,3 +310,12 @@ h6,
     max-width: 100%;
     max-height: 20px; /* Adjust as needed */
 }
+
+.modal-fullscreen {
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+}
+.modal-fullscreen .modal-content {
+    height: 100%;
+}

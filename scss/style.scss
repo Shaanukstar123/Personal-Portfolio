@@ -356,3 +356,11 @@ h6,
         height: 200px;
     }
 }
+
+.navbar-custom {
+    background-color: #3f3e3e;
+}
+
+.navbar-translucent {
+    background-color: rgba(0, 0, 0, 0.5)!important; /* semi-transparent black */
+}

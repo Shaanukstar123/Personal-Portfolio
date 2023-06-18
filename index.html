@@ -24,6 +24,10 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!--Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -366,7 +370,7 @@
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item python C ">
                     <div class="position-relative overflow-hidden mb-2">
                         <h3 class="text-center text-white-50">SkribblNIOS</h3>
-                        <img class="img-fluid rounded w-100" src="img/skribblnios.jpg" alt="" data-toggle="modal" data-target="#portfolioModal4">
+                        <img class="img-fluid rounded w-100" src="img/skribblnios.png" alt="" data-toggle="modal" data-target="#portfolioModal4">
                         <div class="portfolio-btn d-flex align-items-center justify-content-center">
                             <a href="#" data-toggle="modal" data-target="#portfolioModal4">
                                 <i class="fa fa-plus" style="font-size: 60px;"></i>
@@ -377,8 +381,8 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item python">
                     <div class="position-relative overflow-hidden mb-2">
-                        <h3 class="text-center text-white-50">ML Projects</h3>
-                        <img class="img-fluid rounded w-100" style = "min-height: 220px" src="img/ML.jpg" alt="" data-toggle="modal" data-target="#portfolioModal5">
+                        <h3 class="text-center text-white-50">AI Projects</h3>
+                        <img class="img-fluid rounded w-100" style = "min-height: 230px" src="img/ML.jpg" alt="" data-toggle="modal" data-target="#portfolioModal5">
                         <div class="portfolio-btn d-flex align-items-center justify-content-center">
                             <a href="#" data-toggle="modal" data-target="#portfolioModal5">
                                 <i class="fa fa-plus" style="font-size: 60px;"></i>
@@ -389,8 +393,8 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item python">
                     <div class="position-relative overflow-hidden mb-2">
-                        <h3 class="text-center text-white-50">Tumour Segmentation</h3>
-                        <img class="img-fluid rounded w-100" style = "min-height: 220px" src="img/computervision.png" alt="" data-toggle="modal" data-target="#portfolioModal6">
+                        <h3 class="text-center text-white-50">Brain Tumour Detection</h3>
+                        <img class="img-fluid rounded w-100" style = "min-height: 230px" src="img/computervision.png" alt="" data-toggle="modal" data-target="#portfolioModal6">
                         <div class="portfolio-btn  d-flex align-items-center justify-content-center">
                             <a href="#" data-toggle="modal" data-target="#portfolioModal6">
                                 <i class="fa fa-plus" style="font-size: 60px;"></i>
@@ -442,8 +446,8 @@
 
 <!-- iFEED Modal -->
 <div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document" style="width: 50vw; height: 50vh; max-width: none;">
-        <div class="modal-content" style="height: 80%; background-color: rgba(17, 16, 16, 0.9); color: white;">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content" style="height: 90%; background-color: rgba(17, 16, 16, 0.9); color: white;">
             <div class="modal-header">
                 <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">iFeed - Automated Pet Caretaker</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -465,7 +469,18 @@
                     <img src="img/ifeed2.png" alt="" class="img-fluid" style="width: 40%; height: 350px; object-fit: cover;">
                 </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer d-flex justify-content-between">
+                <div>
+                    <a href="https://github.com/Shaanukstar123/Automated-Pet-Caretaker-Project" target="_blank">
+                        <i class="fab fa-github fa-lg text-white"></i>
+                    </a>
+                    <a href="https://dashing-bubblegum-df43e9.netlify.app/" target="_blank">
+                        <i class="fas fa-link fa-lg text-white ml-3"></i>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=uGYNUQ_-JJI&ab_channel=ValiaGiannopoulou" target="_blank">
+                        <i class="fab fa-youtube fa-lg text-white ml-3"></i>
+                    </a>
+                </div>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -474,22 +489,17 @@
 
 <!-- Rover Modal -->
 <div class="modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document" style="width: 50vw; height: 50vh; max-width: none;">
-        <div class="modal-content" style="height: 80%; background-color: rgba(17, 16, 16, 0.9); color: white;">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content" style="height: 100%; background-color: rgba(17, 16, 16, 0.9); color: white;">
             <div class="modal-header">
                 <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">iFeed - Automated Pet Caretaker</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" style="color: white;">&times;</span>
                 </button>
             </div>
-            <div class="modal-body d-flex">
-                <div style="width: 45%;">
-                    <img src="img/ifeed.png" alt="" class="img-fluid">
-                    <img src="img/ifeed2.png" alt="" class="img-fluid mt-2"> <!-- Added another image here -->
-                </div>
-                <div style="width: 50%; margin-left: 20px;">
+            <div class="modal-body d-flex flex-column align-items-start">
+                <div style="width: 100%; margin-bottom: 20px;">
                     <h4 class = "text-white-50" style="text-align:center;">Information</h4>
-                    <hr style="border:none; border-top:2px solid #cfcece;">
                     <p>In a group of 6 we created a Mars rover system that could:</p>
                     <ul>
                     <li>Autonomously explore a terrain using sensors (gyroscope, ultra-sonic, radar, and camera)</li>
@@ -498,43 +508,68 @@
                     </ul>
                     <p>I developed the self-driving algorithm, built the communication system between the rover and webserver (MQTT), built a back-end for the web app, and managed rover data using MongoDB.</p>
                     <p>I learned to work in a diverse team where members had different skills, and we incorporated each into the design of our rover. The toughest part was fixing the final self-driving algorithm. This was very difficult to perfect for real-world conditions.</p>
-
-                    <!-- Add links or anything else you want to include -->
+                </div>
+                <div style="width: 100%; display: flex; justify-content: space-around;">
+                    <img src="img/rover2.jpg" alt="" class="img-fluid" style="width: 50%; height: 350px; object-fit: cover;">
+                    <img src="img/rover3.jpg" alt="" class="img-fluid" style="width: 40%; height: 350px; object-fit: cover;">
                 </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer d-flex justify-content-between">
+                <div>
+                    <a href="https://github.com/your_username/your_project" target="_blank">
+                        <i class="fab fa-github fa-lg text-white"></i>
+                    </a>
+                    <a href="https://your_project_link" target="_blank">
+                        <i class="fas fa-link fa-lg text-white ml-3"></i>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=your_video_id" target="_blank">
+                        <i class="fab fa-youtube fa-lg text-white ml-3"></i>
+                    </a>
+                </div>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
 </div>
 <!-- ISSIE Modal -->
-<div class="modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document" style="width: 50vw; height: 50vh; max-width: none;">
-        <div class="modal-content" style="height: 80%; background-color: rgba(17, 16, 16, 0.9); color: white;">
+<div class="modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content" style="height: 100%; background-color: rgba(17, 16, 16, 0.9); color: white;">
             <div class="modal-header">
-                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">iFeed - Automated Pet Caretaker</h4>
+                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">Issie - CPU Simulator Rendering</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" style="color: white;">&times;</span>
                 </button>
             </div>
-            <div class="modal-body d-flex">
-                <div style="width: 45%;">
-                    <img src="img/ifeed.png" alt="" class="img-fluid">
-                    <img src="img/ifeed2.png" alt="" class="img-fluid mt-2"> <!-- Added another image here -->
-                </div>
-                <div style="width: 50%; margin-left: 20px;">
+            <div class="modal-body d-flex flex-column align-items-start">
+                <div style="width: 100%; margin-bottom: 20px;">
                     <h4 class = "text-white-50" style="text-align:center;">Information</h4>
-                    <hr style="border:none; border-top:2px solid #cfcece;">
-                    <p style="font-family: monospace, consolas;">- Ability to login to your personal profile and create a feeding timetable (amount of food and date/time).
-                        - Send recorded messages to your pet (built-in speaker)
-                        - Private livestream monitoring of pet's activity through YouTube (built-in camera)
-                        - Dispense a chosen amount directly with the keypad.
-                        In addition to this, our vision-based machine learning model can also discern between the different types and breeds of pets, then use this to upload snapshots of their activities to their separate profiles.</p>
-                    <!-- Add links or anything else you want to include -->
+                    <p>In a group of 6 we created a Mars rover system that could:</p>
+                    <ul>
+                    <li>Autonomously explore a terrain using sensors (gyroscope, ultra-sonic, radar, and camera)</li>
+                    <li>Identify objects using computer vision and communicate findings back to the web server</li>
+                    <li>Be fully remote controllable through an online web app and display its data on the app</li>
+                    </ul>
+                    <p>I developed the self-driving algorithm, built the communication system between the rover and webserver (MQTT), built a back-end for the web app, and managed rover data using MongoDB.</p>
+                    <p>I learned to work in a diverse team where members had different skills, and we incorporated each into the design of our rover. The toughest part was fixing the final self-driving algorithm. This was very difficult to perfect for real-world conditions.</p>
+                </div>
+                <div style="width: 100%; display: flex; justify-content: space-around;">
+                    <img src="img/rover2.jpg" alt="" class="img-fluid" style="width: 50%; height: 350px; object-fit: cover;">
+                    <img src="img/rover3.jpg" alt="" class="img-fluid" style="width: 40%; height: 350px; object-fit: cover;">
                 </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer d-flex justify-content-between">
+                <div>
+                    <a href="https://github.com/your_username/your_project" target="_blank">
+                        <i class="fab fa-github fa-lg text-white"></i>
+                    </a>
+                    <a href="https://your_project_link" target="_blank">
+                        <i class="fas fa-link fa-lg text-white ml-3"></i>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=your_video_id" target="_blank">
+                        <i class="fab fa-youtube fa-lg text-white ml-3"></i>
+                    </a>
+                </div>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -542,96 +577,113 @@
 </div>
 <!-- SkribblNIOS Modal -->
 <div class="modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document" style="width: 50vw; height: 50vh; max-width: none;">
-        <div class="modal-content" style="height: 80%; background-color: rgba(17, 16, 16, 0.9); color: white;">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content" style="background-color: rgba(17, 16, 16, 0.9); color: white;">
             <div class="modal-header">
-                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">iFeed - Automated Pet Caretaker</h4>
+                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">SkribblNIOS - Online Multiplayer Motion Controlled Drawing Game</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" style="color: white;">&times;</span>
                 </button>
             </div>
-            <div class="modal-body d-flex">
-                <div style="width: 45%;">
-                    <img src="img/ifeed.png" alt="" class="img-fluid">
-                    <img src="img/ifeed2.png" alt="" class="img-fluid mt-2"> <!-- Added another image here -->
-                </div>
-                <div style="width: 50%; margin-left: 20px;">
+            <div class="modal-body d-flex flex-column align-items-start">
+                <div style="width: 100%; margin-bottom: 20px;">
                     <h4 class = "text-white-50" style="text-align:center;">Information</h4>
-                    <hr style="border:none; border-top:2px solid #cfcece;">
                     <p> I built a Pictionary-inspired motion-controlled multiplayer drawing game in a team of 6 using an
-                    Intel DE10-Lite FPGA board. We used the FPGA's accelerometer + mathematical modelling for
-                    mapping hand movement and programmed a GUI for the game. Then created a server and
-                    hosted it globally on AWS. I was charge of both building the game on python and then managing
-                    communication between the server and clients.
-                    </p>
-                    <!-- Add links or anything else you want to include -->
+                        Intel DE10-Lite FPGA board. We used the FPGA's accelerometer + mathematical modelling for
+                        mapping hand movement and programmed a GUI for the game. Then created a server and
+                        hosted it globally on AWS. I was charge of both building the game on python and then managing
+                        communication between the server and clients.
+                        </p>
+                </div>
+                <div style="width: 100%; display: flex; justify-content: space-around;">
+                    <img src="img/skribblnios.png" alt="" class="img-fluid" style="width: 50%; height: 350px; object-fit: cover;">
+                    <img src="img/skribblnios2.png" alt="" class="img-fluid" style="width: 40%; height: 350px; object-fit: cover;">
                 </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer d-flex justify-content-between">
+                <div>
+                    <a href="https://github.com/Shaanukstar123/SkribblNIOS-Online-Motion-Controlled-Drawing-Game" target="_blank">
+                        <i class="fab fa-github fa-lg text-white"></i>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=your_video_id" target="_blank">
+                        <i class="fab fa-youtube fa-lg text-white ml-3"></i>
+                    </a>
+                </div>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
 </div>
-<!-- iFEED Modal -->
+<!-- ML Modal -->
 <div class="modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document" style="width: 50vw; height: 50vh; max-width: none;">
-        <div class="modal-content" style="height: 80%; background-color: rgba(17, 16, 16, 0.9); color: white;">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content" style="background-color: rgba(17, 16, 16, 0.9); color: white;">
             <div class="modal-header">
-                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">iFeed - Automated Pet Caretaker</h4>
+                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">Machine Learning Course Projects</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" style="color: white;">&times;</span>
                 </button>
             </div>
-            <div class="modal-body d-flex">
-                <div style="width: 45%;">
-                    <img src="img/ifeed.png" alt="" class="img-fluid">
-                    <img src="img/ifeed2.png" alt="" class="img-fluid mt-2"> <!-- Added another image here -->
-                </div>
-                <div style="width: 50%; margin-left: 20px;">
+            <div class="modal-body d-flex flex-column align-items-start">
+                <div style="width: 100%; margin-bottom: 20px;">
                     <h4 class = "text-white-50" style="text-align:center;">Information</h4>
-                    <hr style="border:none; border-top:2px solid #cfcece;">
-                    <p style="font-family: monospace, consolas;">- Ability to login to your personal profile and create a feeding timetable (amount of food and date/time).
-                        - Send recorded messages to your pet (built-in speaker)
-                        - Private livestream monitoring of pet's activity through YouTube (built-in camera)
-                        - Dispense a chosen amount directly with the keypad.
-                        In addition to this, our vision-based machine learning model can also discern between the different types and breeds of pets, then use this to upload snapshots of their activities to their separate profiles.</p>
-                    <!-- Add links or anything else you want to include -->
+                    <h5 class = "text-white"> Project 1: Discerning Location from Wifi Signal Strength Using Decision Trees </h5>
+                    <p>Trained a decision tree model on a large dataset of Wi-Fi signal strength values corresponding to specific locations on a map. 
+                        The objective was to determine the receiver's location based on the Wi-Fi signal strengths surrounding them.</p>
+                    <h5 class = "text-white"> Project 2: Building a Neural Network model to Predict Propoerty Values</h5>
+                    <p>Created an artificial neural network using the PyTorch library to model the average house prices in different locations within California.</p>      
+                </div>
+                <div style="width: 100%; display: flex; justify-content: space-around;">
+                    <img src="img/ml2.png" alt="" class="img-fluid" style="width: 50%; height: 350px; object-fit: cover;">
+                    <img src="img/ml1.png" alt="" class="img-fluid" style="width: 40%; height: 350px; object-fit: cover;">
                 </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer d-flex justify-content-between">
+                <div>
+                    <p style="display: inline;">Project 1  </p>
+                    <a href="https://github.com/Shaanukstar123/Machine-Learning-Project-Decision-Trees/tree/main" target="_blank">
+                        <i class="fab fa-github fa-lg text-white"></i>
+                    </a>
+                    <p style="display: inline;">Project 2  </p>
+                    <a href="https://github.com/Shaanukstar123/Artificial-Neural-Network-Predicting-House-Prices" target="_blank">
+                        <i class="fab fa-github fa-lg text-white"></i>
+                    </a>
+                </div>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
 </div>
-<!-- iFEED Modal -->
+<!-- ComputerVision Modal -->
 <div class="modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document" style="width: 50vw; height: 50vh; max-width: none;">
-        <div class="modal-content" style="height: 80%; background-color: rgba(17, 16, 16, 0.9); color: white;">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content" style="background-color: rgba(17, 16, 16, 0.9); color: white;">
             <div class="modal-header">
-                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">iFeed - Automated Pet Caretaker</h4>
+                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">SkribblNIOS - Online Multiplayer Motion Controlled Drawing Game</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" style="color: white;">&times;</span>
                 </button>
             </div>
-            <div class="modal-body d-flex">
-                <div style="width: 45%;">
-                    <img src="img/ifeed.png" alt="" class="img-fluid">
-                    <img src="img/ifeed2.png" alt="" class="img-fluid mt-2"> <!-- Added another image here -->
-                </div>
-                <div style="width: 50%; margin-left: 20px;">
+            <div class="modal-body d-flex flex-column align-items-start">
+                <div style="width: 100%; margin-bottom: 20px;">
                     <h4 class = "text-white-50" style="text-align:center;">Information</h4>
-                    <hr style="border:none; border-top:2px solid #cfcece;">
-                    <p style="font-family: monospace, consolas;">- Ability to login to your personal profile and create a feeding timetable (amount of food and date/time).
-                        - Send recorded messages to your pet (built-in speaker)
-                        - Private livestream monitoring of pet's activity through YouTube (built-in camera)
-                        - Dispense a chosen amount directly with the keypad.
-                        In addition to this, our vision-based machine learning model can also discern between the different types and breeds of pets, then use this to upload snapshots of their activities to their separate profiles.</p>
-                    <!-- Add links or anything else you want to include -->
+                    <p> I built a Pictionary-inspired motion-controlled multiplayer drawing game in a team of 6 using an
+                        Intel DE10-Lite FPGA board. We used the FPGA's accelerometer + mathematical modelling for
+                        mapping hand movement and programmed a GUI for the game. Then created a server and
+                        hosted it globally on AWS. I was charge of both building the game on python and then managing
+                        communication between the server and clients.
+                        </p>
+                </div>
+                <div style="width: 100%; display: flex; justify-content: space-around;">
+                    <img src="img/tumour1.png" alt="" class="img-fluid" style="width: 60%; height: 350px; object-fit: cover;">
                 </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer d-flex justify-content-between">
+                <div>
+                    <a href="https://github.com/Shaanukstar123/Computer-Vision-Brain-Tumour-Image-Segmentation/tree/main" target="_blank">
+                        <i class="fab fa-github fa-lg text-white"></i>
+                    </a>
+                </div>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -639,67 +691,77 @@
 </div>
 <!-- Compiler Modal -->
 <div class="modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document" style="width: 50vw; height: 50vh; max-width: none;">
-        <div class="modal-content" style="height: 80%; background-color: rgba(17, 16, 16, 0.9); color: white;">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content" style="background-color: rgba(17, 16, 16, 0.9); color: white;">
             <div class="modal-header">
-                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">iFeed - Automated Pet Caretaker</h4>
+                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">SkribblNIOS - Online Multiplayer Motion Controlled Drawing Game</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" style="color: white;">&times;</span>
                 </button>
             </div>
-            <div class="modal-body d-flex">
-                <div style="width: 45%;">
-                    <img src="img/ifeed.png" alt="" class="img-fluid">
-                    <img src="img/ifeed2.png" alt="" class="img-fluid mt-2"> <!-- Added another image here -->
-                </div>
-                <div style="width: 50%; margin-left: 20px;">
+            <div class="modal-body d-flex flex-column align-items-start">
+                <div style="width: 100%; margin-bottom: 20px;">
                     <h4 class = "text-white-50" style="text-align:center;">Information</h4>
-                    <hr style="border:none; border-top:2px solid #cfcece;">
                     <p> One of the most challenging projects I've been a part of. Working as a pair with my peer, we were
-                    able to build a fully functional C compiler that could convert high-level code into MIPS Assembly.
-                    For this project we had to learn lexing, parsing, scripting (bash), building abstract syntax trees
-                    and combining all of these using high-level C++ OOP and Polymorphism.
-                    </p>
-                    <!-- Add links or anything else you want to include -->
+                        able to build a fully functional C compiler that could convert high-level code into MIPS Assembly.
+                        For this project we had to learn lexing, parsing, scripting (bash), building abstract syntax trees
+                        and combining all of these using high-level C++ OOP and Polymorphism.
+                        </p>
+                </div>
+                <div style="width: 100%; display: flex; justify-content: space-around;">
+                    <img src="img/compiler.png" alt="" class="img-fluid" style="width: 50%; height: 350px; object-fit: cover;">
                 </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer d-flex justify-content-between">
+                <div>
+                    <a href="hhttps://github.com/Shaanukstar123/C-Compiler" target="_blank">
+                        <i class="fab fa-github fa-lg text-white"></i>
+                    </a>
+                </div>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
 </div>
-<!-- DrawingBot Modal -->
+<!-- DrawingBot Modal --> 
 <div class="modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document" style="width: 50vw; height: 50vh; max-width: none;">
-        <div class="modal-content" style="height: 80%; background-color: rgba(17, 16, 16, 0.9); color: white;">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content" style="height: 90%; background-color: rgba(17, 16, 16, 0.9); color: white;">
             <div class="modal-header">
                 <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">iFeed - Automated Pet Caretaker</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" style="color: white;">&times;</span>
                 </button>
             </div>
-            <div class="modal-body d-flex">
-                <div style="width: 45%;">
-                    <img src="img/ifeed.png" alt="" class="img-fluid">
-                    <img src="img/ifeed2.png" alt="" class="img-fluid mt-2"> <!-- Added another image here -->
-                </div>
-                <div style="width: 50%; margin-left: 20px;">
+            <div class="modal-body d-flex flex-column align-items-start">
+                <div style="width: 100%; margin-bottom: 20px;">
                     <h4 class = "text-white-50" style="text-align:center;">Information</h4>
-                    <hr style="border:none; border-top:2px solid #cfcece;">
                     <p>I Built a robot that could draw any bitmap image onto a piece paper. I used my own
-                    mechanical design (for the pen) and spare computer parts, such as stepper motors from DVD
-                    drives for the XY motion, and servo motors for the Z motion of the pen. Using an Arduino micro-controller to control the components via C++ code, I created a robot that could sketch any uploaded image onto a piece of paper.</p>
-                    <!-- Add links or anything else you want to include -->
+                        mechanical design (for the pen) and spare computer parts, such as stepper motors from DVD
+                        drives for the XY motion, and servo motors for the Z motion of the pen. Using an Arduino 
+                        micro-controller to control the components via C++ code, I created a robot that could sketch 
+                        any uploaded image onto a piece of paper.</p>
+                </div>
+                <div style="width: 100%; display: flex; justify-content: space-around;">
+                    <img src="img/drawingbot3.jpg" alt="" class="img-fluid" style="width: 50%; height: 350px; object-fit: cover;">
+                    <img src="img/drawingbot2.jpg" alt="" class="img-fluid" style="width: 40%; height: 350px; object-fit: cover;">
                 </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer d-flex justify-content-between">
+                <div>
+                    <a href="https://www.behance.net/gallery/86194359/My-Arduino-CNC-Drawing-Robot" target="_blank">
+                        <i class="fas fa-link fa-lg text-white ml-3"></i>
+                    </a>
+                    <a href="https://www.behance.net/gallery/86194359/My-Arduino-CNC-Drawing-Robot" target="_blank">
+                        <i class="fab fa-youtube fa-lg text-white ml-3"></i>
+                    </a>
+                </div>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
 </div>
-<!-- Multiplayer Modal -->
+<!-- Multiplayer Modal --> 
 <div class="modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document" style="width: 50vw; height: 50vh; max-width: none;">
         <div class="modal-content" style="height: 80%; background-color: rgba(17, 16, 16, 0.9); color: white;">

@@ -340,7 +340,7 @@
                                 <i class="fa fa-plus" style="font-size: 60px;"></i>
                             </a>
                         </div>
-                        <p class="mt-2">Python, Pytorch (Computer Vision), JavaScript, MQTT, IoT, AWS</p>
+                        <p class="mt-2">Python, Pytorch (Computer Vision), JavaScript, MQTT, Raspberry Pi,IoT, AWS, Electronics</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item C web">
@@ -364,7 +364,7 @@
                                 <i class="fa fa-plus" style="font-size: 60px;"></i>
                             </a>
                         </div>
-                        <p class="mt-2">F#, Functional Programming</p>
+                        <p class="mt-2">F#, Functional Programming, JavaScript, React Components, SVGs, Functional Abstraction</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item python C ">
@@ -447,7 +447,7 @@
 <!-- iFEED Modal -->
 <div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-        <div class="modal-content" style="height: 90%; background-color: rgba(17, 16, 16, 0.9); color: white;">
+        <div class="modal-content" style="height: 100%; background-color: rgba(17, 16, 16, 0.9); color: white;">
             <div class="modal-header">
                 <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">iFeed - Automated Pet Caretaker</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -457,16 +457,28 @@
             <div class="modal-body d-flex flex-column align-items-start">
                 <div style="width: 100%; margin-bottom: 20px;">
                     <h4 class = "text-white-50" style="text-align:center;">Information</h4>
-                    <p>Ability to login to your personal profile and create a feeding timetable (amount of food and date/time).
-                        - Send recorded messages to your pet (built-in speaker)
-                        - Private livestream monitoring of pet's activity through YouTube (built-in camera)
-                        - Dispense a chosen amount directly with the keypad.
-                        In addition to this, our vision-based machine learning model can also discern between the different types and breeds of pets, then use this to upload snapshots of their activities to their separate profiles.</p>
-                    <!-- Add links or anything else you want to include -->
+                    <p>Introducing iFeed. The fully autonomous pet caretaker that my team 
+                       and I spent 3 weeks building. This is not just your typical food dispenser, we ensured that it contains all 
+                       the features needed to monitor, communicate and feed your pet while you are away from home. These features include:</p>
+                        <ul>
+                        <li>Ability to login to your personal profile and create a feeding timetable (amount of food and date/time).</li>
+                        <li>Send recorded messages to your pet while away from home(built-in speaker).</li>
+                        <li>Private livestream monitoring of pet's activity, streamed to your private YouTube channel (built-in camera)</li>
+                        <li>Choice to dispense a chosen amount directly using the built-in keypad.</li>
+                    </ul>
+                    <p>
+                    In addition to this, our vision-based machine learning model can discern between the different types and breeds
+                    of pets, then use this to automatically upload snapshots of their activities to their separate profiles.</p>
+                    <p>Our design is unique and was 3D printed. The website was built using VueJS for the frontend and Fast-API for the backend.
+                        The computer vision model was built using the Pytorch library and it takes the video data directly from the Youtube livestream.
+                        I was in charge of programming the Raspberry Pi, communication between device and website using MQTT, 
+                        creating and hosting the server on AWS EC2, settig up the livestream from the Pi Cam, testing and programming the sensors, 
+                        and building the circuitry.</p>
+                        
                 </div>
                 <div style="width: 100%; display: flex; justify-content: space-around;">
-                    <img src="img/ifeed.png" alt="" class="img-fluid" style="width: 50%; height: 350px; object-fit: cover;">
-                    <img src="img/ifeed2.png" alt="" class="img-fluid" style="width: 40%; height: 350px; object-fit: cover;">
+                    <img src="img/ifeed.png" alt="" class="img-fluid" style="width: 50%; height: 420px; object-fit: cover;">
+                    <img src="img/ifeed2.png" alt="" class="img-fluid" style="width: 50%; height: 420px; object-fit: cover;">
                 </div>
             </div>
             <div class="modal-footer d-flex justify-content-between">
@@ -492,7 +504,7 @@
     <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
         <div class="modal-content" style="height: 100%; background-color: rgba(17, 16, 16, 0.9); color: white;">
             <div class="modal-header">
-                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">iFeed - Automated Pet Caretaker</h4>
+                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">The Mars Rover Project</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" style="color: white;">&times;</span>
                 </button>
@@ -500,11 +512,15 @@
             <div class="modal-body d-flex flex-column align-items-start">
                 <div style="width: 100%; margin-bottom: 20px;">
                     <h4 class = "text-white-50" style="text-align:center;">Information</h4>
-                    <p>In a group of 6 we created a Mars rover system that could:</p>
+                    <p>This was a massive project that was completed in a group of 6. We completed the following goals:</p>
                     <ul>
-                    <li>Autonomously explore a terrain using sensors (gyroscope, ultra-sonic, radar, and camera)</li>
-                    <li>Identify objects using computer vision and communicate findings back to the web server</li>
-                    <li>Be fully remote controllable through an online web app and display its data on the app</li>
+                    <li>Fully operational Mars Rover with 3-mode functionality (Remote Control, Autopilot and Shortest Path to Coordinate).</li>
+                    <li>Online Web-App (Javascript + REACT + MQTT + AWS hosting) that allows full control of rover's operation modes with a 
+                        virtual map that updates during the rover's missions. Data stored in a MongoDB database.</li>
+                    <li>Terasic camera module with programmed Computer Vision to detect aliens and buildings on Mars.</li>
+                    <li>Radar module to detect underground infrastructure. Gyroscope, optic sensor and ultrasonic sensors for positioning and obstacle avoidance.</li>
+                    <li>Autonomous driving and shortest distance algorithm.</li>
+                    <li>Solar energy farm to recharge the rover when low on battery.</li>
                     </ul>
                     <p>I developed the self-driving algorithm, built the communication system between the rover and webserver (MQTT), built a back-end for the web app, and managed rover data using MongoDB.</p>
                     <p>I learned to work in a diverse team where members had different skills, and we incorporated each into the design of our rover. The toughest part was fixing the final self-driving algorithm. This was very difficult to perfect for real-world conditions.</p>
@@ -544,14 +560,21 @@
             <div class="modal-body d-flex flex-column align-items-start">
                 <div style="width: 100%; margin-bottom: 20px;">
                     <h4 class = "text-white-50" style="text-align:center;">Information</h4>
-                    <p>In a group of 6 we created a Mars rover system that could:</p>
-                    <ul>
-                    <li>Autonomously explore a terrain using sensors (gyroscope, ultra-sonic, radar, and camera)</li>
-                    <li>Identify objects using computer vision and communicate findings back to the web server</li>
-                    <li>Be fully remote controllable through an online web app and display its data on the app</li>
-                    </ul>
-                    <p>I developed the self-driving algorithm, built the communication system between the rover and webserver (MQTT), built a back-end for the web app, and managed rover data using MongoDB.</p>
-                    <p>I learned to work in a diverse team where members had different skills, and we incorporated each into the design of our rover. The toughest part was fixing the final self-driving algorithm. This was very difficult to perfect for real-world conditions.</p>
+                    <p>Issie is a large digital circuit and CPU simulator that has been in continuous development, run by Dr Thomas Clarke of my University's EE Department.
+                        This project involved improving and providing new features to the current version of issie. The codebase was mainly built using F#, a functional programming language.
+                        This was our first functional programming project, hence my team and I had to learn this new paradigm and code to the high standard required as this is a product
+                        that is currently used within our Univesity with multiple collaborators expanding on it all the time.
+                    </p>
+                    <p>My first task was building a feature that allowed the option for users to switch between the new IEEE square gates and the old curved logic gates. First I manually 
+                        created the SVGs for the gates but later built funtions that automatically generate SVGs based on parameters. I then proposed unique features that I created such as
+                        the ability to scale all logic gates, and automatic rendering of compoenent titles that don't overlap with the components around it.
+                    </p>
+                    <p>
+                        I added advanced features later on that required extensive knowledge of this large codebase, which I gained from the previous tasks. This included adding n-input gates
+                        (not supported beforehand) and rendering them in both old and new IEEE styles. These tasks required me to collaborate directly with my Professor in real-time and it
+                         improved my use of git version control.
+                    </p>
+                    <p>My rendering work was the best from my cohort according to feedback from Dr Clarke, and it was one of the few to be chosen for integration with the next version of Issie!</p>
                 </div>
                 <div style="width: 100%; display: flex; justify-content: space-around;">
                     <img src="img/issie1.png" alt="" class="img-fluid" style="width: 50%; height: 350px; object-fit: cover;">
@@ -560,14 +583,11 @@
             </div>
             <div class="modal-footer d-flex justify-content-between">
                 <div>
-                    <a href="https://github.com/your_username/your_project" target="_blank">
+                    <a href="https://github.com/hlp-team-5/hlp23-team5/tree/team5" target="_blank">
                         <i class="fab fa-github fa-lg text-white"></i>
                     </a>
-                    <a href="https://your_project_link" target="_blank">
+                    <a href="https://tomcl.github.io/issie/" target="_blank">
                         <i class="fas fa-link fa-lg text-white ml-3"></i>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=your_video_id" target="_blank">
-                        <i class="fab fa-youtube fa-lg text-white ml-3"></i>
                     </a>
                 </div>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -588,12 +608,14 @@
             <div class="modal-body d-flex flex-column align-items-start">
                 <div style="width: 100%; margin-bottom: 20px;">
                     <h4 class = "text-white-50" style="text-align:center;">Information</h4>
-                    <p> I built a Pictionary-inspired motion-controlled multiplayer drawing game in a team of 6 using an
-                        Intel DE10-Lite FPGA board. We used the FPGA's accelerometer + mathematical modelling for
-                        mapping hand movement and programmed a GUI for the game. Then created a server and
-                        hosted it globally on AWS. I was charge of both building the game on python and then managing
-                        communication between the server and clients.
-                        </p>
+                    <p> This was a Pictionary-inspired motion-controlled multiplayer drawing game in a team of 6 using an
+                        Intel DE10-Lite FPGA board. We used the FPGA's accelerometer + mathematical modelling (Euler angles) to
+                        map the drawing motion onto a 2D grid. Then I created a GUI for the game using the Pygame library. 
+                        Finally we created a server that clients connect to using TCP Sockets and
+                        hosted it globally on AWS. </p>
+                        <p> I took a lead role in this project and was in charge of building the GUI and managing TCP
+                        communication between the server and clients. </p>
+                    </p>
                 </div>
                 <div style="width: 100%; display: flex; justify-content: space-around;">
                     <img src="img/skribblnios.png" alt="" class="img-fluid" style="width: 50%; height: 350px; object-fit: cover;">
@@ -659,7 +681,7 @@
     <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
         <div class="modal-content" style="background-color: rgba(17, 16, 16, 0.9); color: white;">
             <div class="modal-header">
-                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">SkribblNIOS - Online Multiplayer Motion Controlled Drawing Game</h4>
+                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">Computer Vision - Brain Tumour Segmentation</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" style="color: white;">&times;</span>
                 </button>
@@ -694,7 +716,7 @@
     <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
         <div class="modal-content" style="background-color: rgba(17, 16, 16, 0.9); color: white;">
             <div class="modal-header">
-                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">SkribblNIOS - Online Multiplayer Motion Controlled Drawing Game</h4>
+                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">Building a C Compiler</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" style="color: white;">&times;</span>
                 </button>
@@ -728,7 +750,7 @@
     <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
         <div class="modal-content" style="height: 90%; background-color: rgba(17, 16, 16, 0.9); color: white;">
             <div class="modal-header">
-                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">iFeed - Automated Pet Caretaker</h4>
+                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">CNC Drawing Robot</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" style="color: white;">&times;</span>
                 </button>
@@ -766,7 +788,7 @@
     <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
         <div class="modal-content" style="height: 90%; background-color: rgba(17, 16, 16, 0.9); color: white;">
             <div class="modal-header">
-                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">iFeed - Automated Pet Caretaker</h4>
+                <h4 class="modal-title text-white" id="portfolioModal1Label" style="font-family: monospace;">Online Multiplayer Shooter Game</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" style="color: white;">&times;</span>
                 </button>
